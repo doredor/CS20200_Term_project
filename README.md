@@ -25,6 +25,7 @@ dotnet run --project CS20200_Term_project
 
 The game runs entirely in the terminal. No additional external dependency is required.
 
+
 ---
 
 ## Game Overview
@@ -47,6 +48,7 @@ If the player chooses a breaking panel, the player loses 1 life unless a defensi
 
 The game ends immediately when the player's lives become 0.
 
+
 ## Stage and Sector Rules
 
 A stage consists of multiple steps.
@@ -67,6 +69,7 @@ General rule:
 ```text
 steps per stage = ((stage - 1) / 10) + 1
 ```
+
 
 ## How to Play
 
@@ -99,11 +102,13 @@ The available panel numbers depend on the selected path:
 | Normal | 1, 2, 3 |
 | Abyss | 1, 2, 3, 4 |
 
+
 ## Rewards and Items
 
 After every 5 completed stages, the player receives a reward based on the path chosen for that sector.
 
 The game shows two items from the corresponding reward tier, and the player chooses one item to add to the inventory.
+
 
 ### Silver Reward
 
@@ -112,12 +117,14 @@ The game shows two items from the corresponding reward tier, and the player choo
 | First Aid Kit | Gives +2 lives |
 | Rubber Hammer | Removes one breaking panel from the current step before panel selection |
 
+
 ### Gold Reward
 
 | Item | Effect |
 |---|---|
 | Large First Aid Kit | Gives +5 lives |
 | Reinforced Shoes | Prevents life loss from breaking panels until the current stage ends |
+
 
 ### Prism Reward
 
@@ -126,11 +133,13 @@ The game shows two items from the corresponding reward tier, and the player choo
 | Full Recovery | Gives +9 lives |
 | Prism Shield | Takes effect immediately and prevents life loss from breaking panels until the end of the next stage |
 
+
 ## Input Handling
 
 For every user input, if the player enters a non-number input or a number outside the valid range for the current prompt, the game prints an error message and asks the player to enter the input again.
 
 Invalid input does not change the game state.
+
 
 ## Game Result
 
@@ -143,11 +152,10 @@ When the game ends, the game prints:
 
 ---
 
-## Requirement Changes
+## Requirement Change
 
-The following changes were made after the original proposal.
+The following change was made after the original proposal.
 
----
 
 ### 1. Stage Progression Adjustment
 

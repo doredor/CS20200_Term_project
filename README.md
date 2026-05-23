@@ -4,14 +4,10 @@ Nine Lives is a command-line roguelike survival game implemented in F# using .NE
 
 The player starts with 9 lives and advances through an endless glass bridge. At each step, the player chooses one glass panel. Exactly one panel is safe, and all other panels break. The goal is to survive as long as possible by choosing paths, managing lives, and using reward items.
 
----
-
 ## Requirements
 
 - F#
 - .NET 10 SDK
-
----
 
 ## How to Run
 
@@ -51,8 +47,6 @@ If the player chooses a breaking panel, the player loses 1 life unless a defensi
 
 The game ends immediately when the player's lives become 0.
 
----
-
 ## Stage and Sector Rules
 
 A stage consists of multiple steps.
@@ -73,8 +67,6 @@ General rule:
 ```text
 steps per stage = ((stage - 1) / 10) + 1
 ```
-
----
 
 ## How to Play
 
@@ -107,8 +99,6 @@ The available panel numbers depend on the selected path:
 | Normal | 1, 2, 3 |
 | Abyss | 1, 2, 3, 4 |
 
----
-
 ## Rewards and Items
 
 After every 5 completed stages, the player receives a reward based on the path chosen for that sector.
@@ -136,15 +126,11 @@ The game shows two items from the corresponding reward tier, and the player choo
 | Full Recovery | Gives +9 lives |
 | Prism Shield | Takes effect immediately and prevents life loss from breaking panels until the end of the next stage |
 
----
-
 ## Input Handling
 
 For every user input, if the player enters a non-number input or a number outside the valid range for the current prompt, the game prints an error message and asks the player to enter the input again.
 
 Invalid input does not change the game state.
-
----
 
 ## Game Result
 

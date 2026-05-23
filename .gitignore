@@ -1,0 +1,12 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# IDE/editor
+.vscode/
+.vs/
+
+# macOS
+.DS_Store
